@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldGameHub - Global Gaming Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-globe"></i>
+                    <span>WorldGameHub</span>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#popular" class="nav-link">Popular</a>
+                    <a href="#new" class="nav-link">New Releases</a>
+                    <a href="#regions" class="nav-link">Regions</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search games...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="user-menu">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="line">Play Games From</span>
+                        <span class="line">Around The</span>
+                        <span class="line">World</span>
+                    </h1>
+                    <p class="hero-subtitle">Discover and play thousands of games from every corner of the globe</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Start Playing</button>
+                        <button class="btn btn-outline">Explore Regions</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="game-cube">
+                        <div class="cube-face front"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games Carousel -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Global Games</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel" id="featuredCarousel">
+                    <!-- Featured games will be inserted here by JS -->
+                </div>
+                <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions Section -->
+    <section id="regions" class="regions">
+        <div class="container">
+            <h2 class="section-title">Explore by Region</h2>
+            <div class="regions-grid" id="regionsGrid">
+                <!-- Regions will be inserted here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Game Categories</h2>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be inserted here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Games -->
+    <section id="popular" class="popular">
+        <div class="container">
+            <h2 class="section-title">Popular Worldwide</h2>
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="action">Action</button>
+                <button class="tab-btn" data-filter="adventure">Adventure</button>
+                <button class="tab-btn" data-filter="strategy">Strategy</button>
+                <button class="tab-btn" data-filter="puzzle">Puzzle</button>
+            </div>
+            <div class="games-grid" id="gamesGrid">
+                <!-- Games will be inserted here by JS -->
+            </div>
+            <div class="load-more">
+                <button class="btn btn-outline" id="loadMoreBtn">Load More Games</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Releases -->
+    <section id="new" class="new-releases">
+        <div class="container">
+            <h2 class="section-title">New Global Releases</h2>
+            <div class="timeline" id="timeline">
+                <!-- Timeline items will be inserted here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3 class="stat-number" data-target="10000">0</h3>
+                    <p>Games Available</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3 class="stat-number" data-target="195">0</h3>
+                    <p>Countries Covered</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3 class="stat-number" data-target="5000000">0</h3>
+                    <p>Active Players</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-language"></i>
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p>Languages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WorldGameHub</h3>
+                    <p>Your gateway to global gaming. Play, connect, and compete with players worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Popular Games</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Regions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Action Games</a></li>
+                        <li><a href="#">Adventure Games</a></li>
+                        <li><a href="#">Strategy Games</a></li>
+                        <li><a href="#">Puzzle Games</a></li>
+                        <li><a href="#">Sports Games</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Regions</h4>
+                    <ul>
+                        <li><a href="#">North America</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">South America</a></li>
+                        <li><a href="#">Africa</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 WorldGameHub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Modal -->
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be inserted here by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
